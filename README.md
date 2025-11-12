@@ -1,0 +1,3 @@
+Finally getting around to pushing Amateur Radio related scripts I'm fettling or have fettled....
+
+73 ei3kf.
