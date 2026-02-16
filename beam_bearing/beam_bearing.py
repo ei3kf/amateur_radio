@@ -36,14 +36,15 @@ def bearings_between_locators(locator1, locator2):
 def main():
     if len(sys.argv) != 3:
         print(f"Usage: {sys.argv[0]} <start_locator> <end_locator>")
+        print(f"Example: {sys.argv[0]} IO63 EL99")
         sys.exit(1)
 
     start_locator = sys.argv[1].upper()
     end_locator = sys.argv[2].upper()
 
     short_bearing, long_bearing = bearings_between_locators(start_locator, end_locator)
-    print(f"Short path bearing from {start_locator} to {end_locator}: {short_bearing:.1f}°")
-    print(f"Long path bearing  from {start_locator} to {end_locator}: {long_bearing:.1f}°")
+    print(f"Short path bearing from {start_locator} to {end_locator}: {short_bearing:.0f}°")
+    print(f"Long path bearing  from {start_locator} to {end_locator}: {long_bearing:.0f}°")
 
 if __name__ == "__main__":
     main()
